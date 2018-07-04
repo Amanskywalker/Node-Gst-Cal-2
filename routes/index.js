@@ -51,8 +51,8 @@ router.post('/add', function(req, res, next) {
           slab: req.body.slab,
           sum: mathsAPIResponseBody.result[0],
           total: mathsAPIResponseBody.result[1],
-          createdAt: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
-          updatedAt: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')
+          createdAt: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '').replace(/Z/, '+05:30'),
+          updatedAt: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '').replace(/Z/, '+05:30')
           })
       .then( function (result) {
           res.redirect('/');
