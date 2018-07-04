@@ -1,10 +1,10 @@
-var express = require('express');
-var router = express.Router();
+var express     = require('express');
+var router      = express.Router();
 var config      = require('../knexfile.js');
 var env         = 'development';
 var knex        = require('knex')(config[env]);
-module.exports = knex;
-const Request = require('request');
+module.exports  = knex;
+const Request   = require('request');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
