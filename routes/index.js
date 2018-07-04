@@ -8,7 +8,7 @@ const Request   = require('request');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  knex.select('*').from('items')
+  knex.select('*').from('items').orderBy('id', 'desc')
     .then(function(items){
       var count =0, count5 = 0, count12 = 0, count18 = 0, count28 = 0;
       for (var i in items) {
