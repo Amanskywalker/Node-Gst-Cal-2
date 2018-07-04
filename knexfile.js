@@ -10,14 +10,14 @@ module.exports = {
   },
 
   development: {
-    client: 'pg',
-    version: '10.4',
+    client: 'mysql',
+    version: '8.0',
     connection: {
-      host:     'ec2-54-225-230-142.compute-1.amazonaws.com',
-      port:     '5432',
-      database: 'd4lddbu015btv5',
-      user:     'osuhliuihgsrog',
-      password: '591eebe7e4fc5c3c9814e33e2022b987c2e47289eb38aad1c09ba40be11b6d76'
+      host:     'db4free.net',
+      port:     '3306',
+      database: 'tc2sfasfasf',
+      user:     'artootestdb',
+      password: 'artootestdb'
     },
     migrations: {
       tableName: 'knex_migrations'
